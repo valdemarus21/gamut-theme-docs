@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Styles and the product
+data they use · Gamut theme documentation</title>
+<meta name="description" content="Documentation for the Gamut Shopify theme: styles and data.">
+<link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="wordmark" href="index.html">Gamut <span>documentation</span></a>
+    <nav aria-label="Documentation"><ul class="site-nav"><li><a href="index.html">Getting started</a></li><li><a href="styles.html" aria-current="page">Styles and data</a></li><li><a href="features.html">Features</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="versions.html">Versions</a></li></ul></nav>
+  </div>
+</header>
+<div class="layout">
+  <main id="content" class="content">
+<h1 id="styles-and-the-product-data-they-use">Styles and the product
+data they use</h1>
+<p>All four styles share the same sections and settings, so you can mix
+their features. A beauty store can use the comparison table, and a toy
+store can use quantity breaks. The differences are the defaults: colors,
+fonts, shapes, motion and the sample page layouts.</p>
+<p>Several features read <strong>product metafields</strong>. Create
+each definition once in <strong>Settings &gt; Custom data &gt;
+Products</strong>, then fill it in on each product (or import it with a
+CSV). Every feature hides itself on products that have no data, so
+nothing breaks while you fill them in.</p>
+<h2 id="metafields-used-by-the-theme">Metafields used by the theme</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Table"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Namespace and key</th>
+<th>Type</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Badges</td>
+<td><code>custom.badges</code></td>
+<td>List of single line text</td>
+<td>Custom badges on cards and product pages, such as "Vegan" or
+"Bestseller". Turn on in Theme settings &gt; Badges.</td>
+</tr>
+<tr>
+<td>Ingredients</td>
+<td><code>custom.ingredients</code></td>
+<td>Rich text</td>
+<td>Collapsible row or tab on the product page</td>
+</tr>
+<tr>
+<td>How to use</td>
+<td><code>custom.how_to_use</code></td>
+<td>Rich text</td>
+<td>Collapsible row or tab</td>
+</tr>
+<tr>
+<td>Specs</td>
+<td><code>custom.specs</code></td>
+<td>Multi-line text</td>
+<td>Specs table block and the comparison table (compare from the
+catalog). One <code>Label: Value</code> per line.</td>
+</tr>
+<tr>
+<td>Supplement facts</td>
+<td><code>custom.supplement_facts</code></td>
+<td>Multi-line text</td>
+<td>Supplement Facts block (format below)</td>
+</tr>
+<tr>
+<td>Age group</td>
+<td><code>custom.age_group</code></td>
+<td>List of single line text</td>
+<td>Age badge on cards, gift finder, filter</td>
+</tr>
+<tr>
+<td>Safety</td>
+<td><code>custom.safety</code></td>
+<td>Single line text</td>
+<td>Safety note on the product page</td>
+</tr>
+<tr>
+<td>OE numbers</td>
+<td><code>custom.oe_numbers</code></td>
+<td>List of single line text</td>
+<td>Fitment block: original equipment numbers</td>
+</tr>
+<tr>
+<td>Installation guide</td>
+<td><code>custom.install_guide</code></td>
+<td>URL</td>
+<td>Document link block</td>
+</tr>
+<tr>
+<td>Condition</td>
+<td><code>custom.condition</code></td>
+<td>Single line text</td>
+<td>Structured data (<code>new</code>, <code>refurbished</code>,
+<code>used</code>)</td>
+</tr>
+<tr>
+<td>MPN</td>
+<td><code>custom.mpn</code></td>
+<td>Single line text</td>
+<td>Structured data: manufacturer part number</td>
+</tr>
+<tr>
+<td>Rating, Rating count</td>
+<td><code>reviews.rating</code>, <code>reviews.rating_count</code></td>
+<td>Standard definitions</td>
+<td>Stars on cards and product pages. Most reviews apps fill these
+in.</td>
+</tr>
+<tr>
+<td>Subtitle</td>
+<td><code>descriptors.subtitle</code></td>
+<td>Standard definition</td>
+<td>Line under the product title</td>
+</tr>
+</tbody>
+</table></div>
+<p>You can use any metafield as a collection filter in the
+<strong>Search &amp; Discovery</strong> app. Concern, skin type, goal,
+diet, age group, interest and position all make good filters.</p>
+<h2 id="gamut-beauty">Gamut (beauty)</h2>
+<ul>
+<li><strong>Shades:</strong> name your variant option "Shade" or
+"Color". Add a swatch color or picture to each value in the admin, and
+the theme shows swatches on cards and product pages.</li>
+<li><strong>Before and after:</strong> add the <strong>Before and
+after</strong> section, with two photos taken in the same light.</li>
+<li><strong>Routines:</strong> the <strong>Shoppable image</strong>
+section pins products onto a photo. The <strong>Scrolling story</strong>
+section walks through steps, with a picture for each.</li>
+</ul>
+<h2 id="sprig-supplements-and-wellness">Sprig (supplements and
+wellness)</h2>
+<p><strong>Supplement Facts.</strong> Add a multi-line
+<code>custom.supplement_facts</code> metafield, one line per row:</p>
+<pre tabindex="0"><code>Serving size: 2 capsules
+Servings per container: 30
+Magnesium (as magnesium glycinate) | 200 mg | 48%
+Ashwagandha root extract | 300 mg | †
+Other ingredients: Hypromellose capsule, rice flour</code></pre>
+<ul>
+<li>Lines with <code>|</code> become table rows: name, amount and %
+daily value.</li>
+<li>Lines with <code>:</code> are serving facts.</li>
+<li>"Other ingredients" goes under the table.</li>
+<li>Write <code>†</code> where no daily value exists.</li>
+</ul>
+<p><strong>Other features:</strong></p>
+<ul>
+<li><strong>Subscriptions:</strong> install a subscriptions app, such as
+Shopify Subscriptions. The product page then shows one-time and
+subscription options side by side.</li>
+<li><strong>Quantity breaks:</strong> add the <strong>Quantity
+breaks</strong> block to the product template and set each tier, for
+example 2 units for 10% off. For each tier, create a matching automatic
+discount (Amount off products, minimum quantity) in
+<strong>Discounts</strong>. The block shows the saving and checkout
+applies it. B2B customers see their catalog's own price breaks and
+quantity rules automatically:
+<ul>
+<li>the price for the chosen quantity on the product page;</li>
+<li>"Volume pricing available" on product cards;</li>
+<li>in the cart, the quantity rule and how many more units reach the
+next price break.</li>
+</ul></li>
+<li><strong>Price per serving:</strong> set the unit price on each
+variant in the admin; it shows on cards and product pages.</li>
+</ul>
+<h2 id="pinwheel-toys-and-kids">Pinwheel (toys and kids)</h2>
+<ul>
+<li><p><strong>Gift finder:</strong> the <strong>Product finder</strong>
+section asks up to three questions and leads to a filtered collection.
+The default questions use:</p>
+<ul>
+<li><code>custom.age_group</code> for age (add it as a filter in Search
+&amp; Discovery);</li>
+<li>price;</li>
+<li>product type.</li>
+</ul>
+<p>Each question's choices must match the filter values
+exactly.</p></li>
+<li><p><strong>Age badges:</strong> filled from
+<code>custom.age_group</code>.</p></li>
+<li><p><strong>Gift wrap:</strong> create a product called "Gift wrap"
+and choose it in <strong>Theme settings &gt; Cart &gt; Gift
+wrap</strong>.</p></li>
+</ul>
+<h2 id="gearbox-auto-parts">Gearbox (auto parts)</h2>
+<p><strong>Vehicles.</strong> In <strong>Theme settings &gt; Vehicle
+finder</strong>, list the vehicles you sell parts for, one make and
+model per line:</p>
+<pre tabindex="0"><code>Toyota | Camry | 2018-2024 | 2.5L I4, 3.5L V6
+Honda | Civic | 2016-2021 | 2.0L I4, 1.5L Turbo I4</code></pre>
+<p>For long lists, use a shop metafield <code>custom.vehicles</code>
+(multi-line text) in the same format.</p>
+<p><strong>Fitment comes from product tags:</strong></p>
+<ul>
+<li><code>Fits: Toyota / Camry</code> fits every year and engine.</li>
+<li><code>Fits: Toyota / Camry / 2019</code> fits one year.</li>
+<li><code>Fits: Toyota / Camry / 2019 / 2.5L I4</code> fits one
+engine.</li>
+<li><code>Universal fit</code> fits every vehicle.</li>
+</ul>
+<p>You can add tags in bulk with the product CSV or bulk editor.</p>
+<p><strong>What the store then does:</strong></p>
+<ul>
+<li><strong>Vehicle finder:</strong> customers choose their vehicle
+once. Every product page then says whether the part fits, and lists all
+the vehicles it fits.</li>
+<li><strong>Vehicle pages:</strong> each vehicle gets its own collection
+page, for example <code>/collections/all/fits-toyota-camry</code>,
+titled "All parts for Toyota Camry".</li>
+<li><strong>Part numbers:</strong> customers can search by SKU or by OE
+number, from <code>custom.oe_numbers</code>.</li>
+</ul>
+<p>Make and model names describe fitment only. Don't use car makers'
+logos.</p>
+
+  </main>
+  <nav class="toc" aria-label="On this page"><p class="toc__title">On this page</p><ul><li><a href="#metafields-used-by-the-theme">Metafields used by the theme</a></li><li><a href="#gamut-beauty">Gamut (beauty)</a></li><li><a href="#sprig-supplements-and-wellness">Sprig (supplements and
+wellness)</a></li><li><a href="#pinwheel-toys-and-kids">Pinwheel (toys and kids)</a></li><li><a href="#gearbox-auto-parts">Gearbox (auto parts)</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <p>Gamut theme, version 1.0.0 · <a href="support.html">Support</a> · <a href="versions.html">Version history</a></p>
+</footer>
+</body>
+</html>

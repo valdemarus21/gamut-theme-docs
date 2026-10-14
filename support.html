@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Gamut theme documentation</title>
+<meta name="description" content="Documentation for the Gamut Shopify theme: support.">
+<link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script type="module" src="assets/support.js"></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="wordmark" href="index.html">Gamut <span>documentation</span></a>
+    <nav aria-label="Documentation"><ul class="site-nav"><li><a href="index.html">Getting started</a></li><li><a href="styles.html">Styles and data</a></li><li><a href="features.html">Features</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html" aria-current="page">Support</a></li><li><a href="versions.html">Versions</a></li></ul></nav>
+  </div>
+</header>
+<div class="layout">
+  <main id="content" class="content">
+<h1 id="support">Support</h1>
+<h2 id="contact-us">Contact us</h2>
+<p>Send us a message with the form below. We reply within two business
+days, Monday to Friday. You get an email confirming that your message
+arrived as soon as you send it.</p>
+
+<form class="support-form" id="support-form" action="" method="post" enctype="multipart/form-data" novalidate data-support-form data-unconnected>
+  <p class="form-note" data-unconnected-note>This form isn't connected yet. It will be before Gamut is published.</p>
+  <div class="form-errors" role="alert" tabindex="-1" data-errors hidden></div>
+  <div class="field">
+    <label for="name">Your name</label>
+    <input id="name" name="name" type="text" autocomplete="name" required data-error="Enter your name.">
+  </div>
+  <div class="field">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" required data-error="Enter your email address.">
+  </div>
+  <div class="field">
+    <label for="store">Store address</label>
+    <input id="store" name="store_url" type="text" inputmode="url" required aria-describedby="store-hint" data-error="Enter your store address.">
+    <p class="hint" id="store-hint">For example, yourstore.myshopify.com</p>
+  </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="style">Style</label>
+      <select id="style" name="style">
+        <option>Gamut</option>
+        <option>Sprig</option>
+        <option>Pinwheel</option>
+        <option>Gearbox</option>
+        <option>I'm not sure</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="version">Theme version <span class="optional">(optional)</span></label>
+      <input id="version" name="theme_version" type="text" aria-describedby="version-hint">
+      <p class="hint" id="version-hint">Shown under the theme's name in Online Store &gt; Themes</p>
+    </div>
+  </div>
+  <div class="field">
+    <label for="subject">Subject</label>
+    <input id="subject" name="subject" type="text" required data-error="Enter a subject.">
+    <input type="hidden" name="_subject" value="Gamut support" data-mail-subject>
+    <input type="hidden" name="theme" value="Gamut">
+  </div>
+  <div class="field">
+    <label for="message">Describe the problem</label>
+    <textarea id="message" name="message" rows="7" required aria-describedby="message-hint" data-error="Describe the problem."></textarea>
+    <p class="hint" id="message-hint">Which page and section, what you expected and what happened instead.</p>
+  </div>
+  <div class="field">
+    <label for="files">Screenshots or a screen recording <span class="optional">(optional)</span></label>
+    <input id="files" name="attachments" type="file" accept="image/*,video/mp4,video/quicktime" multiple aria-describedby="files-hint">
+    <p class="hint" id="files-hint">Up to 5 files, 10 MB each.</p>
+  </div>
+  <button class="button" type="submit">Send message</button>
+  <p class="hint">We use these details only to answer your request.</p>
+  <div class="form-status" role="status" data-status></div>
+</form>
+
+<h2 id="what-support-includes">What support includes</h2>
+<ul>
+<li>Answers to questions about Gamut's settings, sections and
+blocks.</li>
+<li>Help finding a feature and setting it up.</li>
+<li>Fixes for bugs in the theme. Fixes are free and come in theme
+updates.</li>
+<li>Help updating to a new version of Gamut.</li>
+</ul>
+<h2 id="what-support-doesnt-include">What support doesn't include</h2>
+<ul>
+<li>Changes to the theme's code, or help with code that you or someone
+else changed.</li>
+<li>Design work, such as building pages or choosing pictures.</li>
+<li>Setting up apps, or problems that an app causes. We check whether
+the theme is involved and tell you what we find.</li>
+<li>Store settings outside the theme, such as payments, shipping,
+domains and taxes. Shopify Support helps with these.</li>
+</ul>
+<p>For custom work, you can hire a developer from the <a
+href="https://www.shopify.com/partners/directory" rel="noopener">Shopify Partner
+directory</a>.</p>
+<h2 id="before-you-contact-us">Before you contact us</h2>
+<ul>
+<li>Look for your question in the <a href="faq.html">FAQ</a>.</li>
+<li>Make sure you use the latest version of Gamut. In <strong>Online
+Store &gt; Themes</strong>, the theme shows a notice when an update is
+available.</li>
+<li>If you or a developer changed the theme's code, check whether the
+problem also happens in a fresh copy of Gamut from your theme
+library.</li>
+<li>Turn off apps one at a time to see whether one of them causes the
+problem.</li>
+</ul>
+<h2 id="what-to-include-in-your-message">What to include in your
+message</h2>
+<ul>
+<li>Your store address, for example
+<code>yourstore.myshopify.com</code>.</li>
+<li>The style you started from (Gamut, Sprig, Pinwheel or Gearbox) and
+the theme version. The version is in <strong>Online Store &gt;
+Themes</strong>, under the theme's name.</li>
+<li>The page and the section with the problem.</li>
+<li>What you expected to happen, and what happened instead.</li>
+<li>Screenshots or a short screen recording.</li>
+</ul>
+<h2 id="changing-the-themes-code">Changing the theme's code</h2>
+<p>If you change the theme's code, duplicate the theme first
+(<strong>Online Store &gt; Themes &gt; … &gt; Duplicate</strong>) and
+make your changes on the copy. We can't support changes to the code.
+Code changes aren't carried over when you update the theme, so keep a
+note of them.</p>
+
+  </main>
+  <nav class="toc" aria-label="On this page"><p class="toc__title">On this page</p><ul><li><a href="#contact-us">Contact us</a></li><li><a href="#what-support-includes">What support includes</a></li><li><a href="#what-support-doesnt-include">What support doesn't include</a></li><li><a href="#before-you-contact-us">Before you contact us</a></li><li><a href="#what-to-include-in-your-message">What to include in your
+message</a></li><li><a href="#changing-the-themes-code">Changing the theme's code</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <p>Gamut theme, version 1.0.0 · <a href="support.html">Support</a> · <a href="versions.html">Version history</a></p>
+</footer>
+</body>
+</html>

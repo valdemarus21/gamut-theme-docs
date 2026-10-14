@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questions and
+troubleshooting · Gamut theme documentation</title>
+<meta name="description" content="Documentation for the Gamut Shopify theme: faq.">
+<link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="wordmark" href="index.html">Gamut <span>documentation</span></a>
+    <nav aria-label="Documentation"><ul class="site-nav"><li><a href="index.html">Getting started</a></li><li><a href="styles.html">Styles and data</a></li><li><a href="features.html">Features</a></li><li><a href="faq.html" aria-current="page">FAQ</a></li><li><a href="support.html">Support</a></li><li><a href="versions.html">Versions</a></li></ul></nav>
+  </div>
+</header>
+<div class="layout">
+  <main id="content" class="content">
+<h1 id="questions-and-troubleshooting">Questions and
+troubleshooting</h1>
+<p><strong>A section shows products I didn't choose.</strong> Until you
+choose a collection, product or picture for a section, Gamut fills it
+from your store, so the theme looks like your store from the start.
+Select the section and choose what you want. The inspector's setup guide
+counts these sections, and <strong>Highlight on the page</strong> shows
+where they are.</p>
+<p><strong>The stats, the hero card or the reviews show numbers that
+aren't mine.</strong> That is sample text to show the layout. Replace it
+with your own figures, or remove the block, before you publish.</p>
+<p><strong>Some product blocks don't appear.</strong> Blocks such as
+Supplement Facts, specs, fitment and custom badges hide themselves when
+a product has no data for them. Add the metafield on the product; see <a
+href="styles.html">styles and data</a>.</p>
+<p><strong>The vehicle finder has no vehicles.</strong> Add your list in
+<strong>Theme settings &gt; Vehicle finder</strong>, or create the shop
+metafield <code>custom.vehicles</code>. Then tag your products with
+<code>Fits: Make / Model</code> tags.</p>
+<p><strong>The gift finder shows no results.</strong> Every answer must
+match a filter value in your store. In <strong>Search &amp;
+Discovery</strong>, add the filters the questions use, such as the age
+group metafield. Then make sure each choice in the gift finder is
+spelled exactly like the filter value.</p>
+<p><strong>Filters don't appear on collection pages.</strong> Install
+Shopify's free <strong>Search &amp; Discovery</strong> app and add
+filters there. Gamut shows whatever filters you set up.</p>
+<p><strong>Subscriptions don't show on the product page.</strong>
+Install a subscriptions app, such as Shopify Subscriptions, and add the
+product to a subscription plan. The options then appear
+automatically.</p>
+<p><strong>Which customer accounts does Gamut support?</strong>
+Both.</p>
+<ul>
+<li><strong>New customer accounts</strong> (Settings &gt; Customer
+accounts): customers sign in with a one-time code. Shopify hosts the
+account pages, and you style them in Settings &gt; Checkout and accounts
+&gt; Customize. The account icon in the header opens the sign-in and the
+account menu; choose that menu in the header settings.</li>
+<li><strong>Classic customer accounts:</strong> Gamut includes sign in,
+create account, account overview, order details, addresses, account
+activation and password reset pages in the theme's style. Each has its
+own template in the theme editor (Templates &gt; Customers), with a
+color scheme setting.</li>
+</ul>
+<p><strong>A customer reached a reward in the cart bar but didn't get it
+at checkout.</strong> The rewards bar only shows progress. Create a
+matching rule in Shopify for each reward, at the same amount:</p>
+<ul>
+<li><strong>Free shipping:</strong> a free shipping rate (Settings &gt;
+Shipping and delivery) or a free shipping discount.</li>
+<li><strong>Free gift:</strong> an automatic "Buy X get Y"
+discount.</li>
+<li><strong>Percentage off:</strong> an automatic "Amount off order"
+discount with a minimum purchase amount.</li>
+</ul>
+<p><strong>The bundle builder shows a saving but checkout doesn't apply
+it.</strong> The builder only shows the saving. In
+<strong>Discounts</strong>, create an automatic "Amount off products"
+discount for the same collection, with a minimum quantity equal to the
+items per bundle and the same percentage.</p>
+<p><strong>Animations feel too strong, or I don't want them.</strong> Go
+to <strong>Theme settings &gt; Animation</strong> and choose
+<strong>Subtle</strong> or <strong>None</strong>. Visitors who turn on
+"reduce motion" on their device never see them anyway.</p>
+<p><strong>The inspector badge is in the way.</strong> Only you see it,
+in the theme editor, and only after you turn it on. Click it to close
+the panel, or uncheck <strong>Theme settings &gt; SEO and structured
+data &gt; Show page inspector in the theme editor</strong>.</p>
+<p><strong>I use an SEO app that adds its own structured data.</strong>
+Turn off <strong>Theme settings &gt; SEO and structured data &gt;
+Enhanced structured data</strong>. The theme then falls back to
+Shopify's standard data, so you don't get duplicates.</p>
+
+  </main>
+  
+</div>
+<footer class="site-footer">
+  <p>Gamut theme, version 1.0.0 · <a href="support.html">Support</a> · <a href="versions.html">Version history</a></p>
+</footer>
+</body>
+</html>
